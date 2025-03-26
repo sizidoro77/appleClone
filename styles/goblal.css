@@ -1,9 +1,11 @@
 :root {
     --bg-primary: #000000;
     --text-light: #ffffff;
+    --text-dark: #1D1D1F;
     --title-primary-color: #F5F5F7;
     --subtitle-color:  #6E6E73;
     --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
 }
 
 header {
@@ -39,11 +41,22 @@ header nav ul li {
 
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 main section {
     text-align: center;
+    position: relative;
 }
 
-main section h1 {
+main section img {
+    width: 100%;
+    height: auto;
+}
+
+main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
     font-weight: bold;
@@ -51,15 +64,16 @@ main section h1 {
     letter-spacing: -0.28px;
 }
 
-main section h2 {
+main .main-section h2 {
     color: var(--subtitle-color);
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 2rem;
     margin-bottom: 1rem;
+
 }
 
-main section .text-wrapper {
+main .main-section .text-wrapper {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -69,7 +83,7 @@ main section .text-wrapper {
     margin-top: 51px;
 }
 
-main section a {
+main .main-section a {
     color: var(--action-color);
     line-height: 1.8rem;
     font-size: 1.2rem;
@@ -77,11 +91,85 @@ main section a {
     cursor: pointer;
 }
 
-main section a:hover {
+main .main-section a:hover {
     text-decoration: underline;
 }
 
-main section img {
+main .spirited-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main .spirited-section > div:last-child {
+    bottom: 50px;
+}
+main .spirited-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    max-width: 60%;
+}
+
+main .spirited-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--spirited-main-color);
+    letter-spacing: -0.6px;
+}
+
+main .spirited-section p{
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.11px;
+}
+main .spirited-section span {
+     color: var(--text-light);
+     font-size: 1.2rem;
+     line-height: 1.5rem;
+     display: block;
+     letter-spacing: 0.23px;
+
+}
+
+main .iphone-section h2 {
+    color: var(--text-dark);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;
+}
+
+main .iphone-section p {
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+main .iphone-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main .iphone-section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .iphone-section a:hover {
+    text-decoration: underline;
 }
