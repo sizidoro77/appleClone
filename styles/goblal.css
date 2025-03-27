@@ -56,6 +56,18 @@ main section img {
     height: auto;
 }
 
+main .section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .section a:hover {
+    text-decoration: underline;
+}
+
 main .main-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
@@ -81,18 +93,6 @@ main .main-section .text-wrapper {
     flex-direction: column;
     align-items: center;
     margin-top: 51px;
-}
-
-main .main-section a {
-    color: var(--action-color);
-    line-height: 1.8rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-main .main-section a:hover {
-    text-decoration: underline;
 }
 
 main .spirited-section > div {
@@ -152,6 +152,15 @@ main .iphone-section p {
 
 }
 
+main .iphone-section .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+
 main .iphone-section .text-wrapper {
     position: absolute;
     left: 50%;
@@ -162,14 +171,3 @@ main .iphone-section .text-wrapper {
     margin-top: 51px;
 }
 
-main .iphone-section a {
-    color: var(--action-color);
-    line-height: 1.8rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-main .iphone-section a:hover {
-    text-decoration: underline;
-}
