@@ -86,6 +86,7 @@ main .main-section h2 {
 }
 
 main .main-section .text-wrapper {
+    color: var(--action-color);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -162,6 +163,7 @@ main .iphone-section .link-wrapper {
 
 
 main .iphone-section .text-wrapper {
+    color: var(--action-color);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -169,5 +171,6 @@ main .iphone-section .text-wrapper {
     flex-direction: column;
     align-items: center;
     margin-top: 51px;
+    cursor: pointer;
 }
 
